@@ -1,99 +1,77 @@
-## swiftwebapp
-
-Basic Web project with Kitura on Swift
-
-[![](https://img.shields.io/badge/IBM%20Cloud-powered-blue.svg)](https://bluemix.net)
-![Platform](https://img.shields.io/badge/platform-SWIFT-lightgrey.svg?style=flat)
-
-### Table of Contents
-* [Summary](#summary)
-* [Requirements](#requirements)
-* [Configuration](#configuration)
-* [Run](#run)
-* [Debug](#debug)
-
-<a name="summary"></a>
-### Summary
-The Web basic starter contains an opinionated set of files for web serving:
-
-- `public/index.html`
-- `public/404.html`
-- `public/500.html`
+<p align="center">
+    <a href="http://kitura.io/">
+        <img src="https://raw.githubusercontent.com/IBM-Swift/Kitura/master/Sources/Kitura/resources/kitura-bird.svg?sanitize=true" height="100" alt="Kitura">
+    </a>
+</p>
 
 
-
-<a name="enablement"></a>
-### IBM Cloud Enablement
-
-<a name="requirements"></a>
-### Requirements
-#### Local Development Tools Setup (optional)
-
-- On Linux, install the [Swift toolchain](http://www.swift.org) version 3.1.1
-- On macOS, install [Xcode](https://developer.apple.com/download) 8.3+
-
-
-#### IBM Cloud development tools setup (optional)
-
-1. Install [IBM Cloud Developer Tools](https://console.bluemix.net/docs/cli/idt/setting_up_idt.html#add-cli) on your machine  
-2. Install the plugin with: `bx plugin install dev -r bluemix`
+<p align="center">
+    <a href="https://cloud.ibm.com">
+    <img src="https://img.shields.io/badge/IBM%20Cloud-powered-blue.svg" alt="IBM Cloud">
+    </a>
+    <img src="https://img.shields.io/badge/platform-ios_swift-lightgrey.svg?style=flat" alt="platform">
+    <img src="https://img.shields.io/badge/os-macOS-green.svg?style=flat" alt="macOS">
+    <img src="https://img.shields.io/badge/os-linux-green.svg?style=flat" alt="Linux">
+    <img src="https://img.shields.io/badge/license-Apache2-blue.svg?style=flat" alt="Apache 2">
+    <a href="http://swift-at-ibm-slack.mybluemix.net/">
+    <img src="http://swift-at-ibm-slack.mybluemix.net/badge.svg" alt="Slack Status">
+    </a>
+</p>
 
 
-#### IBM Cloud DevOps setup (optional)
+# Create and deploy a Swift Web Application using Kitura
 
-[![Create Toolchain](https://console.ng.bluemix.net/devops/graphics/create_toolchain_button.png)](https://console.ng.bluemix.net/devops/setup/deploy/)
+> We have similar patterns available for [Node.js](https://github.com/IBM/nodejs-web-app), [Java Spring](https://github.com/IBM/spring-web-app), [Go](https://github.com/IBM/go-web-app), Python [Django](https://github.com/IBM/django-web-app) & [Flask](https://github.com/IBM/flask-web-app), and [Java Liberty](https://github.com/IBM/java-liberty-web-app) as well!
 
-[IBM Cloud DevOps](https://www.ibm.com/cloud-computing/bluemix/devops) services provides toolchains as a set of tool integrations that support development, deployment, and operations tasks inside IBM Cloud. The "Create Toolchain" button creates a DevOps toolchain and acts as a single-click deploy to IBM Cloud including provisioning all required services. 
-
-***Note** you must publish your project to [Github](https://github.com/) for this to work.
+In this sample application, you will create a basic web application using [Kitura](https://www.kitura.io/) to serve web pages in Swift, complete with standard best practices, including a health check and application metric monitoring.
 
 
+## Steps
 
-<a name="configuration"></a>
-### Configuration
+You can [deploy this application to IBM Cloud]() or [build it locally]() by cloning this repo first.
 
-Your application configuration information is stored in `config.json`. If you selected services added to your project, you will see Cloudant, Object Storage, and other services with their connection information such as username, password, and hostname listed here. This is useful for connecting to remote services while running your application locally.
+### Deploying to IBM Cloud
 
-When you push your application to IBM Cloud, however, these values are no longer used, and instead IBM Cloud automatically connects to those bound services through the use of environment variables. The `config.json` file has been added to the `.gitignore` file so you don't accidently check in the secret credentials.
+[NEED BUTTON]()
+
+Use the button above to deploy this same application to IBM Cloud.  This option will create a deployment pipeline, complete with a hosted Git lab project and devops toolchain.  You will have the option of deploying to either CloudFoundry or a Kubernetes cluster. [IBM Cloud DevOps](https://www.ibm.com/cloud-computing/bluemix/devops) services provides toolchains as a set of tool integrations that support development, deployment, and operations tasks inside IBM Cloud. 
 
 
-<a name="run"></a>
-### Run
-#### Using IBM Cloud development CLI
-The IBM Cloud development plugin makes it easy to compile and run your application if you do not have all of the tools installed on your computer yet. Your application will be compiled with Docker containers. To compile and run your app, run:
+### Building Locally
+
+To get started building this application locally, you can either run the application natively or use the IBM Cloud Developer tools for containerization and easy deployment to IBM Cloud.
+
+
+#### Native Application Development
+
+- On Linux, install the [Swift toolchain](https://swift.org/) version _v5.0_.
+- On macOS, install [Xcode](https://developer.apple.com/download) _v10.2+_
+
+In the root of this project, first build the application using `swift build`. `swift run` will launch the application and render it at `http://localhost:8080`.
+
+#### IBM Cloud development tools
+
+1. Install [IBM Cloud Developer Tools](https://cloud.ibm.com/docs/cli/index.html#overview) on your machine
+2. Install the plugin with: `ibmcloud plugin install dev -r "IBM Cloud"`
+
+Your application will be compiled with Docker containers. To compile and run your app, run:
 
 ```bash
-bx dev build
-bx dev run
+ibmcloud dev build
+ibmcloud dev run
 ```
 
+This will launch you application locally.  When you are ready to deploy to IBM Cloud, use the `bx dev deploy -t buildpack` or `bx dev deploy -t container` to deploy to CloudFoundry or Kubernetes, respectively.
 
-#### Using your local development environment
-Once the Swift toolchain has been installed, you can compile a Swift project with:
+You can build and debug your app locally with:
 
 ```bash
-swift build
+ibmcloud dev build --debug
+ibmcloud dev debug
 ```
 
-Your sources will be compiled to your `.build/debug` directory.
+## License
 
+This sample application is licensed under the Apache License, Version 2. Separate third-party code objects invoked within this code pattern are licensed by their respective providers pursuant to their own separate licenses. Contributions are subject to the [Developer Certificate of Origin, Version 1.1](https://developercertificate.org/) and the [Apache License, Version 2](https://www.apache.org/licenses/LICENSE-2.0.txt).
 
-
-
-##### Endpoints
-
-Your application is running at: `http://localhost:8080/` in your browser.
-
-
-
-
-<a name="debug"></a>
-### Debug
-
-#### Using IBM Cloud development CLI
-To build and debug your app, run:
-```bash
-bx dev build --debug
-bx dev debug
-```
-
+[Apache License FAQ](https://www.apache.org/foundation/license-faq.html#WhatDoesItMEAN)
