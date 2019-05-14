@@ -21,18 +21,18 @@
 
 # Create and deploy a Swift Web Application using Kitura
 
-> We have similar patterns available for [Node.js](https://github.com/IBM/nodejs-web-app), [Java Spring](https://github.com/IBM/spring-web-app), [Go](https://github.com/IBM/go-web-app), Python [Django](https://github.com/IBM/django-web-app) & [Flask](https://github.com/IBM/flask-web-app), and [Java Liberty](https://github.com/IBM/java-liberty-web-app) as well!
+> We have similar patterns available for [Node.js](https://github.com/IBM/nodejs-web-app), [Java Spring](https://github.com/IBM/spring-web-app), [Go](https://github.com/IBM/go-web-app), Python [Django](https://github.com/IBM/django-web-app) & [Flask](https://github.com/IBM/flask-web-app), and [Java Liberty](https://github.com/IBM/java-liberty-web-app).
 
 In this sample application, you will create a basic web application using [Kitura](https://www.kitura.io/) to serve web pages in Swift, complete with standard best practices, including a health check and application metric monitoring.
 
 
 ## Steps
 
-You can [deploy this application to IBM Cloud](https://cloud.ibm.com/developer/appservice/starter-kits/ad373fa7-330f-32a3-8f9e-d2d2649497ed/swift-web-app-with-kitura) or [build it locally](#building-locally) by cloning this repo first.
+You can [deploy this application to IBM Cloud](https://cloud.ibm.com/developer/appservice/starter-kits/ad373fa7-330f-32a3-8f9e-d2d2649497ed/swift-web-app-with-kitura) or [build it locally](#building-locally) by cloning this repo first.  Once your app is live, you can access the `/health` and `/swiftmetrics-dash` to build out your cloud native application.
 
 ### Deploying to IBM Cloud
 
-[NEED BUTTON](https://cloud.ibm.com/developer/appservice/starter-kits/ad373fa7-330f-32a3-8f9e-d2d2649497ed/swift-web-app-with-kitura)
+[![Deploy to IBM Cloud](https://cloud.ibm.com/devops/setup/deploy/button.png)](https://cloud.ibm.com/developer/appservice/starter-kits/ad373fa7-330f-32a3-8f9e-d2d2649497ed/swift-web-app-with-kitura)
 
 Use the button above to deploy this same application to IBM Cloud.  This option will create a deployment pipeline, complete with a hosted Git lab project and devops toolchain.  You will have the option of deploying to either CloudFoundry or a Kubernetes cluster. [IBM Cloud DevOps](https://www.ibm.com/cloud-computing/bluemix/devops) services provides toolchains as a set of tool integrations that support development, deployment, and operations tasks inside IBM Cloud. 
 
