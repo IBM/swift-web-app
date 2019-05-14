@@ -21,7 +21,7 @@
 
 # Create and deploy a Swift Web Application using Kitura
 
-> We have similar patterns available for [Node.js](https://github.com/IBM/nodejs-web-app), [Java Spring](https://github.com/IBM/spring-web-app), [Go](https://github.com/IBM/go-web-app), Python [Django](https://github.com/IBM/django-web-app) & [Flask](https://github.com/IBM/flask-web-app), and [Java Liberty](https://github.com/IBM/java-liberty-web-app).
+> We have similar applications available for [Node.js](https://github.com/IBM/nodejs-web-app), [Java Spring](https://github.com/IBM/spring-web-app), [Go](https://github.com/IBM/go-web-app), Python [Django](https://github.com/IBM/django-web-app) & [Flask](https://github.com/IBM/flask-web-app), and [Java Liberty](https://github.com/IBM/java-liberty-web-app).
 
 In this sample application, you will create a basic web application using [Kitura](https://www.kitura.io/) to serve web pages in Swift, complete with standard best practices, including a health check and application metric monitoring.
 
@@ -32,7 +32,11 @@ You can [deploy this application to IBM Cloud](https://cloud.ibm.com/developer/a
 
 ### Deploying to IBM Cloud
 
-[![Deploy to IBM Cloud](https://cloud.ibm.com/devops/setup/deploy/button.png)](https://cloud.ibm.com/developer/appservice/starter-kits/ad373fa7-330f-32a3-8f9e-d2d2649497ed/swift-web-app-with-kitura)
+<p align="center">
+    <a href="https://cloud.ibm.com/developer/appservice/starter-kits/ad373fa7-330f-32a3-8f9e-d2d2649497ed/swift-web-app-with-kitura">
+    <img src="https://cloud.ibm.com/devops/setup/deploy/button.png" alt="Deploy to IBM Cloud">
+    </a>
+</p>
 
 Use the button above to deploy this same application to IBM Cloud.  This option will create a deployment pipeline, complete with a hosted Git lab project and devops toolchain.  You will have the option of deploying to either CloudFoundry or a Kubernetes cluster. [IBM Cloud DevOps](https://www.ibm.com/cloud-computing/bluemix/devops) services provides toolchains as a set of tool integrations that support development, deployment, and operations tasks inside IBM Cloud. 
 
@@ -60,7 +64,12 @@ ibmcloud dev build
 ibmcloud dev run
 ```
 
-This will launch you application locally.  When you are ready to deploy to IBM Cloud, use the `bx dev deploy -t buildpack` or `bx dev deploy -t container` to deploy to CloudFoundry or Kubernetes, respectively.
+This will launch you application locally.  When you are ready to deploy to IBM Cloud on CloudFoundry or Kubernetes, run one of the commands below:
+
+```bash
+ibmcloud dev deploy -t buildpack
+ibmcloud dev deploy -t container
+```
 
 You can build and debug your app locally with:
 
