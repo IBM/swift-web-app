@@ -28,18 +28,18 @@ In this sample application, you will create a basic web application using [Kitur
 
 ## Steps
 
-You can [deploy this application to IBM Cloud]() or [build it locally]() by cloning this repo first.
+You can [deploy this application to IBM Cloud](https://cloud.ibm.com/developer/appservice/starter-kits/ad373fa7-330f-32a3-8f9e-d2d2649497ed/swift-web-app-with-kitura) or [build it locally](#building-locally) by cloning this repo first.
 
 ### Deploying to IBM Cloud
 
-[NEED BUTTON]()
+[NEED BUTTON](https://cloud.ibm.com/developer/appservice/starter-kits/ad373fa7-330f-32a3-8f9e-d2d2649497ed/swift-web-app-with-kitura)
 
 Use the button above to deploy this same application to IBM Cloud.  This option will create a deployment pipeline, complete with a hosted Git lab project and devops toolchain.  You will have the option of deploying to either CloudFoundry or a Kubernetes cluster. [IBM Cloud DevOps](https://www.ibm.com/cloud-computing/bluemix/devops) services provides toolchains as a set of tool integrations that support development, deployment, and operations tasks inside IBM Cloud. 
 
 
 ### Building Locally
 
-To get started building this application locally, you can either run the application natively or use the IBM Cloud Developer tools for containerization and easy deployment to IBM Cloud.
+To get started building this application locally, you can either run the application natively or use the IBM Cloud Developer Tools for containerization and easy deployment to IBM Cloud.
 
 
 #### Native Application Development
@@ -49,10 +49,9 @@ To get started building this application locally, you can either run the applica
 
 In the root of this project, first build the application using `swift build`. `swift run` will launch the application and render it at `http://localhost:8080`.
 
-#### IBM Cloud development tools
+#### IBM Cloud Developer Tools
 
-1. Install [IBM Cloud Developer Tools](https://cloud.ibm.com/docs/cli/index.html#overview) on your machine
-2. Install the plugin with: `ibmcloud plugin install dev -r "IBM Cloud"`
+Install [IBM Cloud Developer Tools](https://cloud.ibm.com/docs/cli/index.html#overview) on your machine by using the following installation command: `curl -sL https://ibm.biz/idt-installer | bash`.
 
 Your application will be compiled with Docker containers. To compile and run your app, run:
 
@@ -69,6 +68,12 @@ You can build and debug your app locally with:
 ibmcloud dev build --debug
 ibmcloud dev debug
 ```
+
+## Next Steps
+* Learn more about augmenting your Swift applications on IBM Cloud with the [Swift Programming Guide](https://cloud.ibm.com/docs/swift).
+* Explore [Kitura.io](https://www.kitura.io/) for more resources about the Kitura framework.
+* Join the [Swift@IBM slack](http://swift-at-ibm-slack.mybluemix.net/) to get help with your projects.
+* Explore other [sample applications](https://cloud.ibm.com/developer/appservice/starter-kits) on IBM Cloud.
 
 ## License
 
