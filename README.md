@@ -34,7 +34,7 @@ You can [deploy this application to IBM Cloud](https://cloud.ibm.com/developer/a
 
 <p align="center">
     <a href="https://cloud.ibm.com/developer/appservice/starter-kits/ad373fa7-330f-32a3-8f9e-d2d2649497ed/swift-web-app-with-kitura">
-    <img src="https://cloud.ibm.com/devops/setup/deploy/button.png" alt="Deploy to IBM Cloud">
+    <img src="https://cloud.ibm.com/devops/setup/deploy/button_x2.png" alt="Deploy to IBM Cloud">
     </a>
 </p>
 
