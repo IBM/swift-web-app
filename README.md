@@ -57,7 +57,7 @@ In the root of this project, first build the application using `swift build`. `s
 
 Install [IBM Cloud Developer Tools](https://cloud.ibm.com/docs/cli/index.html#overview) on your machine by using the following installation command: `curl -sL https://ibm.biz/idt-installer | bash`.
 
-Your application will be compiled with Docker containers. To compile and run your app, run:
+Your application will be compiled with Docker containers. To compile and run your app, run the following commands:
 
 ```bash
 ibmcloud dev build
