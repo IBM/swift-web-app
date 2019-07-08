@@ -27,12 +27,12 @@ In this sample application, you will create a basic web application using [Kitur
  
 ## Steps
 
-You can [deploy this application to IBM Cloud](https://cloud.ibm.com/developer/appservice/starter-kits/ad373fa7-330f-32a3-8f9e-d2d2649497ed/swift-web-app-with-kitura) or [build it locally](#building-locally) by cloning this repo first. Once your app is live, you can access the `/health` and `/swiftmetrics-dash` endpoints to build out your cloud native application.
+You can [deploy this application to IBM Cloud](https://cloud.ibm.com/developer/appservice/create-app?starterKit=fa97ca34-d257-358a-ba37-f53e566bbef9) or [build it locally](#building-locally) by cloning this repo first. Once your app is live, you can access the `/health` and `/swiftmetrics-dash` endpoints to build out your cloud native application.
 
 ### Deploying to IBM Cloud
 
 <p align="center">
-    <a href="https://cloud.ibm.com/developer/appservice/starter-kits/ad373fa7-330f-32a3-8f9e-d2d2649497ed/swift-web-app-with-kitura">
+    <a href="https://cloud.ibm.com/developer/appservice/create-app?starterKit=fa97ca34-d257-358a-ba37-f53e566bbef9">
     <img src="https://cloud.ibm.com/devops/setup/deploy/button_x2.png" alt="Deploy to IBM Cloud">
     </a>
 </p>
